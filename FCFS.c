@@ -26,17 +26,17 @@ void findavgTime( int processes[], int n, int bt[])
         printf("%d ",wt[i] );
         printf("%d\n",tat[i] );
     }
-    int s=(float)total_wt / (float)n;
-    int t=(float)total_tat / (float)n;
-    printf("Average waiting time = %d",s);
+    float s=(float)total_wt / (float)n;
+    float t=(float)total_tat / (float)n;
+    printf("Average waiting time = %f",s);
     printf("\n");
-    printf("Average turn around time = %d ",t);
+    printf("Average turn around time = %f ",t);
 }
 int main()
 {
-    int processes[] = { 1, 2, 3};
+    int processes[] = { 1, 2, 3 , 4 , 5};
     int n = sizeof processes / sizeof processes[0];
-    int  burst_time[] = {10, 5, 8};
+    int  burst_time[] = {15, 9, 10, 17, 6};
    findavgTime(processes, n,  burst_time);
     return 0;
 }

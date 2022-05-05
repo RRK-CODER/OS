@@ -1,7 +1,8 @@
 #include<stdio.h>
 int main()
 {
-    int bt[20],p[20],wt[20],tat[20],pr[20],i,j,n,total=0,pos,temp,avg_wt,avg_tat;
+    int bt[20],p[20],wt[20],tat[20],pr[20],i,j,n,total=0,pos,temp;
+    float avg_wt,avg_tat;
     printf("Enter Total Number of Process:");
     scanf("%d",&n);
  
@@ -48,7 +49,7 @@ int main()
         total+=wt[i];
     }
  
-    avg_wt=total/n;      
+    avg_wt=(float)total/(float)n;      
     total=0;
  
     printf("\nProcess\t    Burst Time    \tWaiting Time\tTurnaround Time");
@@ -59,9 +60,9 @@ int main()
         printf("\nP[%d]\t\t  %d\t\t    %d\t\t\t%d",p[i],bt[i],wt[i],tat[i]);
     }
  
-    avg_tat=total/n;     
-    printf("\n\nAverage Waiting Time=%d",avg_wt);
-    printf("\nAverage Turnaround Time=%d\n",avg_tat);
+    avg_tat=(float)total/(float)n;     
+    printf("\n\nAverage Waiting Time=%f",avg_wt);
+    printf("\nAverage Turnaround Time=%f\n",avg_tat);
  
     return 0;
 }

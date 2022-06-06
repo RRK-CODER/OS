@@ -5,4 +5,3 @@ do
 echo -n "$i"
 i=$((i+1)) 
 done
-echo

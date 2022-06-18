@@ -20,3 +20,6 @@ printf("Child Complete");
 }
 return 0;
 }
+//fork(): The fork() system call is used to create a separate, duplicate process.
+//exec(): when an exec() system call is invoked the program specified in the parameter to
+//        exec() will replace the entire process - including all threads.

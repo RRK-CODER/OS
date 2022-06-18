@@ -4,11 +4,11 @@ int main()
 {
     int id;
     id=fork();
-    if(id>0)
+    if(id>0) //Parent process
     {
         printf("parent process: id=%d\n",getpid());
     }
-    else if(id==0)
+    else if(id==0) // child process
     {
         printf("New process : id=%d\n", getpid());
         printf("Parent process: id=%d\n",getppid());

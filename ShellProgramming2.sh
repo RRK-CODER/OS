@@ -1,6 +1,6 @@
 echo "Enter file name "
 read filename
-if [-f $fname]
+if [ -f $fname ]
 then 
 echo $fname is a regular file 
 else
